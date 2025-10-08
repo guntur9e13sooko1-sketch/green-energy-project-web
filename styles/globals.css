@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.my-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+  /* Set the iframe's overflow property to hidden */
+}
+
+.my-iframe:hover {
+  overflow: auto;
+  /* Set the iframe's overflow property to auto when the mouse hovers over it */
+}
+
+.my-iframe::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  background-color: transparent;
+  /* Hide the scrollbar for WebKit-based browsers */
+}
+
+.my-iframe {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.link {
+  color: #91caff;
+}
